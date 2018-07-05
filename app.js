@@ -1,5 +1,4 @@
 var express = require('express');
-var router = express.Router();
 var papa = require('papaparse');
 const fs = require('fs');
 var app = express();
@@ -28,7 +27,7 @@ app.get('/', function(req, res, next) {
             return res.json(results)
         }
     })
-});
+})
 
 app.listen(3000, function () {
     console.log('Example app listening on port 3000!')
